@@ -1,0 +1,144 @@
+
+body {
+    text-align: center; 
+}
+
+/* Opaque backdrop and header */
+
+#contactInfo {
+    background-color: #FCFCFC;
+    padding-top: 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    
+}
+
+.linkName {
+    color: blue;
+    font-family: 'Roboto Mono', monospace;
+    }
+
+/* ---------Personal website information--------- */
+
+
+#myWebsite, #myZine {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px; 
+    justify-content: center; 
+    letter-spacing: 3px;
+    align-items: baseline; 
+}
+
+#myZine {
+    padding-bottom: 2%;
+}
+
+/* ----------LINKS---------- */
+
+
+.linkType h2 {
+    color: grey; 
+    margin: 10px; 
+    padding-right: 5%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    white-space: nowrap;
+    
+}
+
+.link h2 {
+    color: blue; 
+    margin-left: .2%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+/* ----------Grid -- Like the Whole Link Tree!---------- */
+
+#mainGrid {
+    text-align: center; 
+  }
+
+  
+  #linkList { 
+    max-width: 30%;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  li {
+    /* background-color: blue;  */
+    height: auto;
+    padding: 3%; 
+  }
+  
+  .treatment img {
+    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    object-fit: fill; 
+  }
+
+
+
+  /*---------------------------------MEDIA--------------------------------- */
+  
+@media (max-width: 700px) {
+
+    /* #mainGrid {
+        text-align: center; 
+        max-width: 90%;
+      } */
+
+    .linkName {
+        color: red; 
+        font-size: 15px;
+    }
+
+    .linkImages {
+        color: pink; 
+    }
+    
+    #linkList {
+        max-width: 100%;
+        list-style: none;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        display: inline-grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+   
+   .linkType h2 {
+        color: grey; 
+        font-size: 15px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;  
+        }
+
+    .link h2 {
+    color: blue; 
+    font-size: 14px;
+    margin-left: .2%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    }
+ 
+
+} 
+
+
+
+/* Questions for Evey */
+/* How do I reduce the spacing between these? */
